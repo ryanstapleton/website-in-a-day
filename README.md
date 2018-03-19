@@ -5,9 +5,10 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version 2.4.0
 
 * System dependencies
+  Devise, Carrierwave, Bootstrap, RSpec
 
 * Configuration
 
@@ -16,6 +17,7 @@ Things you may want to cover:
 * Database initialization
 
 * How to run the test suite
+  require RSpec
 
 * Services (job queues, cache servers, search engines, etc.)
 
