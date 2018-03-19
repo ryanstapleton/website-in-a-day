@@ -6,9 +6,9 @@ Rails.application.routes.draw do
 
   get 'menu', to: 'pages#menu'
 
-  resources :prices
-  resources :sandwiches
-  resources :ingredients
-  resources :sides
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :prices, only: [:new, :create, :edit, :update, :destroy]
+  resources :sandwiches, only: [:new, :create, :edit, :update, :destroy]
+  resources :ingredients, only: [:new, :create, :edit, :update, :destroy]
+  resources :sides, only: [:new, :create, :edit, :update, :destroy]
+
 end
