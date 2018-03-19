@@ -10,8 +10,7 @@
     title: "One Sexy Sandwich",
     size: "large",
     description: "this is a very good sandwich!",
-    main_image: "http://via.placeholder.com/350x200",
-    price: "$3"
+    main_image: "http://via.placeholder.com/200x200",
 
 
     )
