@@ -1,0 +1,37 @@
+<%= form_with(model: sandwich, local: true) do |form| %>
+  <% if sandwich.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(sandwich.errors.count, "error") %> prohibited this sandwich from being saved:</h2>
+
+      <ul>
+      <% sandwich.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title, id: :sandwich_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description, id: :sandwich_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :main_image %>
+    <%= form.text_field :main_image, id: :sandwich_main_image %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.text_field :price, id: :sandwich_price %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @side.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @side.description %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @side.size %>
+</p>
+
+<p>
+  <strong>Main image:</strong>
+  <%= @side.main_image %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @side.price %>
+</p>
+
+<%= link_to 'Edit', edit_side_path(@side) %> |
+<%= link_to 'Back', sides_path %>

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @sandwich.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @sandwich.description %>
+</p>
+
+<p>
+  <strong>Main image:</strong>
+  <%= @sandwich.main_image %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @sandwich.price %>
+</p>
+
+<%= link_to 'Edit', edit_sandwich_path(@sandwich) %> |
+<%= link_to 'Back', sandwiches_path %>
