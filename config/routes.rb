@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :admins
   get 'pages/home'
   root to: 'pages#home'
 
@@ -11,4 +12,5 @@ Rails.application.routes.draw do
   resources :ingredients, only: [:new, :create, :edit, :update, :destroy]
   resources :sides, only: [:new, :create, :edit, :update, :destroy]
 
+  root to: "home#index"
 end
