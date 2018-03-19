@@ -1,1 +1,39 @@
-@import "bootstrap";
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import 'bootstrap';
+
+.video_home{
+  max-width: 720px;
+}
+
+.no-gutter.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.card {
+  font-family: 'Lato', sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.custom-title {
+  font-size: 35px;
+  padding: 30px;
+  background-color: #fffbdb;
+}
+
+.card-text {
+  margin-left: 50px;
+  padding-top: 25px;
+  padding-bottom:25px;
+}
+
+.custom-footer {
+  background-color: #fffbdb;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

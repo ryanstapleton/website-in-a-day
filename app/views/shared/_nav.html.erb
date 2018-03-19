@@ -1,27 +1,25 @@
 <div class="nav-bar">
   <div class="container-fluid">
     <div class="row">
-      
-        <div class="col-md-12">
-          <ul class="nav">
-            <li class="nav-item">
+      <div class="col-md-12">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active"%>
+            <%= link_to "Home", root_path %></a>
+          </li>
+          <li class="nav-item">
               <a class="nav-link active"%>
-              <%= link_to "Home", root_path %></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active"%>
-                <%= link_to "Menu", menu_path %></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active"%>
-                  <%= link_to "Contact Us", contact_path %></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active"><%= link_to "Order Online" %></a>
-            </li>
-          </ul>
-        </div>
-      
+              <%= link_to "Menu", menu_path %></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link active"%>
+                <%= link_to "Contact Us", contact_path %></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link active"><%= link_to "Order Online" %></a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
