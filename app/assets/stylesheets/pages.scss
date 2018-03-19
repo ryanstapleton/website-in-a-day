@@ -1,6 +1,7 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 @import 'bootstrap';
 
 html {
@@ -10,6 +11,11 @@ html {
 body {
   margin-bottom: 60px; /* Margin bottom by footer height */
 }
+
+.video_home{
+  max-width: 720px;
+}
+
 
 .footer {
   position: absolute;
