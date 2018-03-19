@@ -1,2 +1,3 @@
-<h1>Pages#menu</h1>
-<%= @sandwiches.inspect %>
+<h1>Menu</h1>
+<%= render partial: 'sandwiches', locals: {sandwiches: @sandwiches} %>
+
