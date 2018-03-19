@@ -136,6 +136,33 @@ a:hover {
   padding-top: 50px;
 }
 
+/* Nav */
+.nav {
+  background-color: #D6D6D6;
+  text-align: center;
+  color: black;
+  padding: 0px 10px 20px 20px;
+  border-radius: 0px 0px 5px 5px;
+  margin-bottom: 15px;
+}
+
+.nav > li a {
+  padding: 0px 10px 20px 10px;
+  color: darkslategrey;
+}
+
+.nav > li a:hover{
+  text-decoration: none;
+  color: black;
+}
+
+/*#logo-styles {
+  width: 90%;
+  background-color: #D6D6D6;
+  
+}*/
+
+/* Footer */
 .footer {
   position: relative;
   bottom: 0;
@@ -148,4 +175,3 @@ a:hover {
 .login-btn a{
   color: #fff;
 }
-
