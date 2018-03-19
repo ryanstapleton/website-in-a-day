@@ -1,15 +1,126 @@
+@import 'bootstrap';
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
+ * Globals
  */
+
+
+/*
+ * Base structure
+ */
+
+
+
+
+html,
+body {
+  height: 100%;
+}
+body {
+
+  text-align: center;
+
+
+  
+}
+
+/* Links */
+/*a,
+a:focus,
+a:hover {
+  color: #fff;
+}*/
+
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+
+}
+
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 2rem;
+}
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 1.5rem;
+  position: relative;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: bold;
+}
+
+
+
+
+
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+
+
+@media (min-width: 62em) {
+  .cover-container {
+    width: 65rem;
+  }
+}
+
+/*
+ * Custom Styles
+ */
+
+ .card {
+  background-color: #fff;
+ }
+
+.card-block {
+  color: black;
+  text-align: left;
+  padding: 20px;
+}
+
+
+
+.app-card-container {
+  color: black;
+  text-align: left;
+}
+
+.app-card-container > .card {
+  padding: 20px 30px 25px 30px;
+}
+
+
+
+.app-card-container a {
+  color: blue;
+}
+
+.card-block {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.main-page {
+  padding-top: 50px;
+}
+
