@@ -17,3 +17,7 @@
     )
 end
 puts "5 sandwiches created"
+
+Admin.create!(email: "admin@test.com", password: "asdfasdf")
+
+puts "one admin user created"
