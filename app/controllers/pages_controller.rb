@@ -3,7 +3,7 @@ class PagesController < ApplicationController
 
   end
 
-  def about
+  def contact
   end
 
   def menu
