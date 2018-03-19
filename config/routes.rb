@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  devise_for :admins
+  devise_for :admins,  skip: [:registrations, :confirmations]
   get 'pages/home'
   root to: 'pages#home'
 
-  get 'about-us', to: 'pages#about'
+  get 'contact', to: 'pages#contact'
 
   get 'menu', to: 'pages#menu'
 
