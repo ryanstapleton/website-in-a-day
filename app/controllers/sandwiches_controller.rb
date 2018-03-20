@@ -13,7 +13,7 @@ class SandwichesController < ApplicationController
 
     respond_to do |format|
       if @sandwich.save
-        format.html { redirect_to @sandwich, notice: 'Sandwich was successfully created.' }
+        format.html { redirect_to menu_path, notice: 'Sandwich was successfully created.' }
       else
         format.html { render :new }
       end
@@ -23,7 +23,7 @@ class SandwichesController < ApplicationController
   def update
     respond_to do |format|
       if @sandwich.update(sandwich_params)
-        format.html { redirect_to @sandwich, notice: 'Sandwich was successfully updated.' }
+        format.html { redirect_to menu_path, notice: 'Sandwich was successfully updated.' }
       else
         format.html { render :edit }
       end
@@ -33,7 +33,7 @@ class SandwichesController < ApplicationController
   def destroy
     @sandwich.destroy
     respond_to do |format|
-      format.html { redirect_to sandwiches_url, notice: 'Sandwich was successfully destroyed.' }
+      format.html { redirect_to menu_path, notice: 'Sandwich was successfully destroyed.' }
     end
   end
 

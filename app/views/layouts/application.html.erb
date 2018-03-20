@@ -16,14 +16,13 @@
       <div class="cover-container">
         
         <div class="nav-header">
-            <%= render "shared/nav" %>
-          </div>
-        <%= yield %>
-        
+          <%= render "shared/nav" %>
+        </div>
         <p class="notice"><%= notice %></p>
         <p class="alert"><%= alert %></p>
-        
          
+        <%= yield %>
+        
       </div>
     </div>
     <%= render 'shared/footer' %>

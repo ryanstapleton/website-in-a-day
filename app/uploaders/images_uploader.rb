@@ -1,5 +1,5 @@
 class ImagesUploader < CarrierWave::Uploader::Base
-  
+  require 'carrierwave/processing/mini_magick'
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
   include CarrierWave::MiniMagick
@@ -24,7 +24,7 @@ class ImagesUploader < CarrierWave::Uploader::Base
 
   # Process files as they are uploaded:
   # process scale: [200, 300]
-    process resize_to_fill: [200, 200]
+    process resize_to_fill: [350, 230]
 
   #
   # def scale(width, height)
